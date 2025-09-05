@@ -13,3 +13,7 @@ It is discussed in chapter 2.
 Purpose of project: To illustrate conditional statements.
 How to start this project: Create one or more TicketMachine objects.
 
+Part 2 of lab: better-ticket-machine project 
+Question 47: No thew balance never changes after the error messege. 
+Question 48: After running some test and my predictions were rigth, it wouldnt make any difference in the method. 
+Question 49: 
