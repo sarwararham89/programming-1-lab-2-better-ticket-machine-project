@@ -35,8 +35,8 @@ Question 52: yes it is possible. But it shows this message in the printTicket; #
 
 You must insert at least 0 more cents. 
 Question 53: No it cant because when you insertMoney it wont let you go more lower then 0. 
-Question 54: 
-Question 55:  
-Question 56: 
+Question 54: *(multiplication), /(division)
+Question 55: saving = price * discount;
+Question 56: mean = total / count; 
 Question 57: 
       
