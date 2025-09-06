@@ -23,7 +23,7 @@ public class TicketMachine
      */
     public TicketMachine(int cost)
     {
-        price = cost;
+        int price = cost;
         balance = 0;
         total = 0;
     }
@@ -66,7 +66,8 @@ public class TicketMachine
      */
     public void printTicket()
     {
-        if(balance >= price) {
+        int amountLeftToPay = price - balance;
+        if (amountLeftToPay <= 0) { 
             // Simulate the printing of a ticket.
             System.out.println("##################");
             System.out.println("# The BlueJ Line");
@@ -78,15 +79,17 @@ public class TicketMachine
             // Update the total collected with the price.
             total = total + price;
             // Reduce the balance by the price.
-            balance = balance - price;
+            balance = balance - price; 
         }
-         {
+        else {
+            System.out.printf("You must insert %d more cents.%n", price - balance);
+        }
+        } 
+    {
          
             System.out.printf("You must insert at least %d more cents.%n",
                               price - balance);
-        }
     }
-
     /**
      * Return the money in the balance.
      * The balance is cleared.
@@ -109,5 +112,11 @@ public class TicketMachine
         // a message saying weather a ticket is affordable
         System.out.println("Just right"); 
     }
+    } 
+    
+    public int emptyMachine() 
+    {
+        total = 0;
+        return total;
     }
 }
