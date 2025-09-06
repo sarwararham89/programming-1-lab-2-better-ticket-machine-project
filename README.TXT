@@ -38,5 +38,8 @@ Question 53: No it cant because when you insertMoney it wont let you go more low
 Question 54: *(multiplication), /(division)
 Question 55: saving = price * discount;
 Question 56: mean = total / count; 
-Question 57: 
+Question 59: 
+Question 60: It shows an Error saying "unreacheble statement". 60.1; because the methods ends after putting a return statement. 
+Question 61: When i put the value at 10, but when i inspect the value it shows 0 instead of 10. 
+
       
