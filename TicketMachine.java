@@ -17,6 +17,8 @@ public class TicketMachine
     private int balance;
     // The total amount of money collected by this machine.
     private int total;
+    private int discountedPrice;
+
 
     /**
      * Create a machine that issues tickets of the given price.
@@ -118,5 +120,12 @@ public class TicketMachine
     {
         total = 0;
         return total;
+    }
+    
+    public void discountedPrice() 
+    {
+        price = price / 2;
+        discountedPrice = price; // Return to the original price for the next ticket
+        price = price * 2;
     }
 }
